@@ -1,0 +1,238 @@
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject
+$ tough index.html
+bash: tough: command not found
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject
+$ touch index.html
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject
+$ touch app.js
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject
+$ git init
+Initialized empty Git repository in C:/Users/Siyabonga/Desktop/MyProject/.git/
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git config --global user.name 'Siyabonga Mthiyane'
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git config --global user.email 'siyabonga@aims.ac.za^C
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$
+
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git add index.html
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Data_import_yahoo.ipynb
+        Github notes.txt
+        Multiple Questions.ipynb
+        app.js
+
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Data_import_yahoo.ipynb
+        Github notes.txt
+        Multiple Questions.ipynb
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git add *.html
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Data_import_yahoo.ipynb
+        Github notes.txt
+        Multiple Questions.ipynb
+        app.js
+
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git add .
+warning: LF will be replaced by CRLF in Data_import_yahoo.ipynb.
+The file will have its original line endings in your working directory
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git commit
+[master (root-commit) d051418]  Initial commit
+ 5 files changed, 399 insertions(+)
+ create mode 100644 Data_import_yahoo.ipynb
+ create mode 100644 Github notes.txt
+ create mode 100644 Multiple Questions.ipynb
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ touch .gitignore
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ touch log.txt
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git add .
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git branch login
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (login)
+$ git checkout 'master'
+Switched to branch 'master'
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git merge login
+Updating 841da49..86a6f98
+Fast-forward
+ .gitignore | 1 +
+ index.html | 1 +
+ login.html | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 login.html
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git remote
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git remote add origin https://github.com/siyaseven/MyPythonPro.git
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git remote
+origin
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git push -u origin master
+fatal: TaskCanceledException encountered.
+   A task was canceled.
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/siyaseven/MyPythonPro.git/'
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 31.49 KiB | 3.94 MiB/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/siyaseven/MyPythonPro.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 31.49 KiB | 3.94 MiB/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/siyaseven/MyPythonPro.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ touch README.md
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git add .
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git commit -m 'added readme'
+[master ba64934] added readme
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/siyaseven/MyPythonPro.git
+   86a6f98..ba64934  master -> master
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+$ git pull
+Already up to date.
+
+Siyabonga@77VQDP2-DELL MINGW64 ~/Desktop/MyProject (master)
+
