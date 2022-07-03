@@ -5,10 +5,10 @@ I think it is not a question but a statement.
 Question 2.
 
 Choose either Normal Distribution, Binomial Distribution or Log normal distribution. They are used in finance. Normal distribution is continuous but binomial is descrete.
-Use this link to learn more: https://www.investopedia.com/terms/p/probabilitydistribution.asp. You just have to say positive and negatives.
+Use this link to learn more: https://www.investopedia.com/terms/p/probabilitydistribution.asp. You just have to say positive and negatives of the models.
 
 Question 3.
-The code is done in Python.
+The code is done in Python. Please check the code
 
 import numpy as np
 #This example is for Normal distribution  
@@ -48,8 +48,3 @@ https://www.fields.utoronto.ca/programs/scientific/09-10/finance/courses/hurdnot
 Question 9.
 I honestly do not understand this question I think this will explain more about the error term of a regression line:
 https://www.investopedia.com/terms/e/errorterm.asp
-
-Question 10.
-
-
-
